@@ -34,7 +34,7 @@ public class ClientController {
 
         long duration = endTime - startTime;
 
-        System.out.println("O tempo de execução foi: " + duration + " milissegundos");
+        System.out.println("O tempo de execução foi com threads --> : " + duration + " milissegundos");
 
         return Response.ok(clientAddressEntity).build();
 
@@ -50,7 +50,7 @@ public class ClientController {
 
         long duration = endTime - startTime;
 
-        System.out.println("O tempo de execução foi: " + duration + " milissegundos");
+        System.out.println("O tempo de execução foi sem threads -->: " + duration + " milissegundos");
 
         return Response.ok(clientAddressEntity).build();
 
